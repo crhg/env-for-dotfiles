@@ -11,3 +11,7 @@ dotfilesをいじるときに今の環境を壊すと面倒なこともあるの
 # メモ
 
 * zplugはPOSIXロケールだと動かない。
+
+# リンク
+
+https://hub.docker.com/r/crhg/env-for-dotfiles/
