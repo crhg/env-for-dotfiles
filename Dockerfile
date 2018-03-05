@@ -8,4 +8,4 @@ RUN useradd -g users -G sudo -m -s /bin/zsh user && \
     echo 'export LC_CTYPE=ja_JP.UTF-8' > /home/user/.zshenv && \
     chown -R user /home/user
 
-CMD ["sh", "-c", "echo user:$PASS && echo user:$PASS | /usr/sbin/chpasswd && su - user"]
+CMD ["bash", "-c", "if [ -z \"$PASS\" ]; then echo --env PASS=\\<password\\> \\? >&2 ; else echo user:$PASS | /usr/sbin/chpasswd && su - user; fi"]
