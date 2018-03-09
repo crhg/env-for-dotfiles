@@ -5,7 +5,7 @@ dotfilesをいじるときに今の環境を壊すと面倒なこともあるの
 # 使い方
 
 ```console
-% docker run -it --env PASS=<password> crhg/env-for-dotfiles
+% docker run -it crhg/env-for-dotfiles
 ```
 
 # メモ
